@@ -1,17 +1,18 @@
+-- Covid 19 Data Exploration 
+-- Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
 Select *
 From PortfolioProject..CovidDeaths
 Order by 3,4
 
---Select *
---From PortfolioProject..CovidVaccinations
---Order by 3,4
+-- Select Data that we are going to be starting with
 
 Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeaths
 Order by 1,2
 
 -- Total Cases vs Total Deaths
--- Shows the likelihood of dying if you contract covid in Portugal
+-- Shows the likelihood of dying if you contract Covid in Portugal
 
 Select Location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 As DeathPercentage 
 From PortfolioProject..CovidDeaths
@@ -19,7 +20,7 @@ Where Location='Portugal'
 Order by 1,2
 
 -- Total Cases vs Population
--- Shows what percentage of population that got covid 
+-- Shows what percentage of population that got Covid 
 
 Select Location, date, population, total_cases, (total_cases/population)*100 As PopulationPercentage 
 From PortfolioProject..CovidDeaths
