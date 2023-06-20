@@ -8,4 +8,4 @@
  
  Data Cleaning Portfolio Project - Standardizing and cleaning of raw housing data from Nashville using SQL Server.
  
- File Sorter in File Explorer - Automate the sorting of files without having to drag and drop them into folders.
+ File Sorter in File Explorer - Automate the sorting of files without having to drag and drop them into folders using Python
