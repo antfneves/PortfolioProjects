@@ -79,8 +79,17 @@ The company needed me to design a data platform that uses MongoDB as a NoSQL dat
 The company retails download only items like E-Books, Movies, Songs etc. The company has international presence and customers from all over the world. The company would like to create a data warehouse so that it can create reports. 
 
 - Designed the dimension tables softcartDimDate, softcartDimCategory, softcartDimItem and softcartDimCountry.
-- Designed the fact table softcartFactSales and Designed the relationships.
-  
+- Designed the fact table softcartFactSales.
+- Designed the relationships.
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/softcartRelationships.jpg?raw=true)  
+
+- Downloaded the schema sql from ERD tool and created the schema in a database named ‘staging’
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/createschema.jpg?raw=true)
+
+
+
 
 
 
