@@ -26,4 +26,7 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 
   ## OLTP Database
   Design a data platform that uses MySQL as an OLTP database. You will be using MySQL to store the OLTP data.
+  - Created a database named sales
+    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/1createtable.jpg?raw=true)
+    
 
