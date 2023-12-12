@@ -24,18 +24,68 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 -	Spark is used to analyze the data on the Hadoop cluster.
 -	To move data between OLTP, NoSQL and the data warehouse, ETL pipelines are used and these run on Apache Airflow.
 
-  ## OLTP Database
-  Designed a data platform that uses MySQL as an OLTP database. Used MySQL to store the OLTP data.
-  - Created a database named sales
-    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/1createtable.jpg?raw=true)
-  - Imported the data from a csv file using phpMyAdmin
-    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/2importdata.jpg?raw=true)
-  - Wrote a query to find out the count of records in the table sales_data
-    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/4salesrows.jpg?raw=true)
-  - Created an index named ts on the timestamp field. Listed all indexes on the table sales_data.
-    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/5listindexes.jpg?raw=true)
-  - Wrote a bash script that exports all the rows in the sales_daya table to a file named sales_data.sql
-    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/6exportdata.jpg?raw=true)
+## OLTP Database
+Designed a data platform that uses MySQL as an OLTP database. Used MySQL to store the OLTP data.
+  
+- Created a database named sales
+   
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/1createtable.jpg?raw=true)
+    
+- Imported the data from a csv file using phpMyAdmin
+    
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/2importdata.jpg?raw=true)
+    
+- Wrote a query to find out the count of records in the table sales_data
+    
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/4salesrows.jpg?raw=true)
+    
+- Created an index named ts on the timestamp field. Listed all indexes on the table sales_data.
+    
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/5listindexes.jpg?raw=true)
+
+
+- Wrote a bash script that exports all the rows in the sales_daya table to a file named sales_data.sql
+    
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/6exportdata.jpg?raw=true)
+
+## MONGODB
+The company needed me to design a data platform that uses MongoDB as a NoSQL database. Used MongoDB to store the e-commerce catalog data.
+
+- Imported ‘catalagog.json’into MongoDB server into a database named ‘catalog’ and a collection named ‘electronics’
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/7mongoimport.jpg?raw=true)
+
+- Created an index on the field ‘type’
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/10create-index.jpg?raw=true)
+
+- Wrote a query to find the count of laptops
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/11mongo-query-laptops.jpg?raw=true)
+
+- Wrote a query to find the number of smart phones with screen size of 6 inches
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/12mongo-query-mobiles1.jpg?raw=true)  
+
+- Wrote a query to find out the average screen size of smart phones
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/13mongo-query-mobiles2.jpg?raw=true)   
+
+- Exported the fields ‘-id’, ‘type’, ‘model’, from the ‘electronics’collection into a file named electronics.csv
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/14mongoexport.jpg?raw=true)
+
+## DESIGN A DATA WAREHOUSE
+The company retails download only items like E-Books, Movies, Songs etc. The company has international presence and customers from all over the world. The company would like to create a data warehouse so that it can create reports. 
+
+- Designed the dimension tables softcartDimDate, softcartDimCategory, softcartDimItem and softcartDimCountry.
+- Designed the fact table softcartFactSales and Designed the relationships.
+  
+
+
+
+    
+ 
     
     
 
