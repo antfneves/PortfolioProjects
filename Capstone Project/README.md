@@ -25,8 +25,17 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 -	To move data between OLTP, NoSQL and the data warehouse, ETL pipelines are used and these run on Apache Airflow.
 
   ## OLTP Database
-  Design a data platform that uses MySQL as an OLTP database. You will be using MySQL to store the OLTP data.
+  Designed a data platform that uses MySQL as an OLTP database. Used MySQL to store the OLTP data.
   - Created a database named sales
     ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/1createtable.jpg?raw=true)
+  - Imported the data from a csv file using phpMyAdmin
+    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/2importdata.jpg?raw=true)
+  - Wrote a query to find out the count of records in the table sales_data
+    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/4salesrows.jpg?raw=true)
+  - Created an index named ts on the timestamp field. Listed all indexes on the table sales_data.
+    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/5listindexes.jpg?raw=true)
+  - Wrote a bash script that exports all the rows in the sales_daya table to a file named sales_data.sql
+    ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/6exportdata.jpg?raw=true)
+    
     
 
