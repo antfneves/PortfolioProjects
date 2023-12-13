@@ -75,7 +75,7 @@ The company needed me to design a data platform that uses MongoDB as a NoSQL dat
 
 ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/14mongoexport.jpg?raw=true)
 
-## DESIGN A DATA WAREHOUSE
+## DESIGN A DATA WAREHOUSE AND GENERATE REPORTS
 The company retails download only items like E-Books, Movies, Songs etc. The company has international presence and customers from all over the world. The company would like to create a data warehouse so that it can create reports. 
 
 - Designed the dimension tables softcartDimDate, softcartDimCategory, softcartDimItem and softcartDimCountry.
@@ -87,6 +87,41 @@ The company retails download only items like E-Books, Movies, Songs etc. The com
 - Downloaded the schema sql from ERD tool and created the schema in a database named ‘staging’
 
 ![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/createschema.jpg?raw=true)
+
+- LOAD DATA INTO THE DATA WAREHOUSE
+- Created a grouping sets query using the columns country, category, totalsales
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/19groupingsets.jpg?raw=true)
+
+- Created a rollup query using the columns year, country, and totalsales
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/20rollup.jpg?raw=true)
+
+- Created a cube query using the columns year, country, and average sales
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/21cube.jpg?raw=true)
+
+- Created an MQT named total_sales_per_country that has the columns country and total_sales
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/22mqt.jpg?raw=true)
+
+## IBM COGNOS ANALYTICS
+
+- Imported data in the downloaded file ecommerce.csv into a table named sales_history
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/dataimport1.jpg?raw=true)
+
+- Created a line chart of month wise total sales for the year 2020.
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/26linechart.jpg?raw=true)
+
+- Created a pie chart of category wise total sales.
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/27piechart.jpg?raw=true)
+
+- Create a bar chart of Quarterly sales of mobile phones
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/28barchart.jpg?raw=true)
 
 
 
