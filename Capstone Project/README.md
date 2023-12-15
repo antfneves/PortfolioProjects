@@ -128,6 +128,22 @@ You need to keep data synchronized between different databases/data warehouses a
 
 Link: [AUTOMATE LOADING OF INCREMENTAL DATA](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/automation.py)
 
+## APACHE AIRFLOW
+Write a pipeline that analyzes the web server log file, extracts the required lines(ending with html) and fields(time stamp, size ) and transforms (bytes to mb) and load (append to an existing file.)
+
+Link: [PIPELINE](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/process_web_log.py)
+
+- Submit the DAG
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/39submit_dag.jpg?raw=true)
+
+- Monitor the DAG
+
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/41dag_runs.jpg?raw=true)
+
+## APACHE SPARK
+
+
 
 
 
