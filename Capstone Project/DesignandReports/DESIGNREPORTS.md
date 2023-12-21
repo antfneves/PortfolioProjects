@@ -7,13 +7,13 @@ The company retails download only items like E-Books, Movies, Songs etc. The com
   
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/softcartRelationships.jpg?raw=true) 
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/softcartRelationships.jpg?raw=true) 
 
 
 - Download the schema sql from ERD tool and created the schema in a database named ‘staging’
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/createschema.jpg?raw=true)
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/createschema.jpg?raw=true)
 
 
 
@@ -23,20 +23,20 @@ The company retails download only items like E-Books, Movies, Songs etc. The com
 - Create a grouping sets query using the columns country, category, totalsales
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/19groupingsets.jpg?raw=true)
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/19groupingsets.jpg?raw=true)
 
 - Create a rollup query using the columns year, country, and totalsales
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/20rollup.jpg?raw=true)
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/20rollup.jpg?raw=true)
 
 - Create a cube query using the columns year, country, and average sales
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/21cube.jpg?raw=true)
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/21cube.jpg?raw=true)
 
 - Create an MQT named total_sales_per_country that has the columns country and total_sales
   
 
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/22mqt.jpg?raw=true)
+![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/22mqt.jpg?raw=true)
 
