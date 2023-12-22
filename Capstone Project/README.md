@@ -45,7 +45,7 @@ Link: [DESIGN A DATA WAREHOUSE AND GENERATE REPORTS](https://github.com/antfneve
 ## IBM COGNOS ANALYTICS
 Created a Business Intelligence dashboard. First I created a Cognos data source that points to a data warehouse table, then I created a bar chart of quarterly sales of cell phones, created a pie chart of sales of electronic goods by category, and created a line chart of total sales per month for a given year.
 
-Link: [COGNOSANALYTICS](https://github.com/antfneves/PortfolioProjects/tree/main/Capstone%20Project/CognosAnalytics)
+Link: [COGNOSANALYTICS](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/CognosAnalytics/COGNOS.md)
 
 ## AUTOMATE LOADING OF INCREMENTAL DATA INTO THE DATA WAREHOUSE
 Extracted data from an OLTP, NoSQL, and MongoDB databases into CSV format.
