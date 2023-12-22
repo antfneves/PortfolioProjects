@@ -1,4 +1,4 @@
-In this assignment, i performed a number of tasks to analyze search terms on the e-commerce web server. 
+In this assignment, I performed a number of tasks to analyze search terms on the e-commerce web server. 
 I worked in Watson Studio within a Jupyter notebook to run analysis against a CSV 
 file containing the webserver data. 
 I loaded this file into a Spark data frame and printed the results of queries against this data set. 
