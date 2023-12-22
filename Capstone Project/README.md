@@ -3,7 +3,7 @@
 As part of the IBM Data Engineering Capstone Project from Coursera, I assumed the role of the Associate Data Warehouse Engineer who has recently joined an e-commerce organization named SoftCart.
 Sofcart uses a hybrid architecture, with some of its databases on premises and some on cloud.
 
-## TOOLS AND TECHNOLOGIES USED:
+## TOOLS AND TECHNOLOGIES USED
 -	OLTP database – MySQL
 -	NoSQL database – MongoDB
 -	Production Data warehouse – DB2 on Cloud
