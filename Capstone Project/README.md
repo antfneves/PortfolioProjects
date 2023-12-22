@@ -48,13 +48,12 @@ Created a Business Intelligence dashboard. First I created a Cognos data source 
 Link: [COGNOSANALYTICS](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/CognosAnalytics/COGNOS.md)
 
 ## AUTOMATE LOADING OF INCREMENTAL DATA INTO THE DATA WAREHOUSE
-Extracted data from an OLTP, NoSQL, and MongoDB databases into CSV format.
+Created an ETL pipeline using Python to get new data for the day from the OLTP database and load the Data Warehouse.
 
 Link: [AUTOMATE LOADING OF INCREMENTAL DATA](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Automation/AUTOMATION.md)
 
 ## APACHE AIRFLOW
-Transformed the OLTP data to suit the data warehouse schema, and loaded the transformed data into the data warehouse. 
-Finally, I checked if the data was loaded properly.
+Built a data pipeline using Apache Airflow to feed the Big Data cluster.
 
 Link: [AIRFLOW](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Airflow/AIRFLOW.md)
 
