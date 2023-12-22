@@ -25,7 +25,7 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 -	Spark is used to analyze the data on the Hadoop cluster.
 -	To move data between OLTP, NoSQL and the data warehouse, ETL pipelines are used and these run on Apache Airflow.
 
-## OLTP Database
+## OLTP DATABASE
 Designed the OLTP database for the e-commerce website, populated the OLTP Database with the data provided, and 
 automated the export of the daily incremental data into the data warehouse. 
 
