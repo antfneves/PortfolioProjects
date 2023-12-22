@@ -1,4 +1,6 @@
 # Data Engineering Capstone Project
+![]([https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/data.jpg?raw=true)
+
 As part of the IBM Data Engineering Capstone Project from Coursera, I assumed the role of the Associate Data Warehouse Engineer who has recently joined an e-commerce organization named SoftCart.
 Sofcart uses a hybrid architecture, with some of its databases on premises and some on cloud.
 
