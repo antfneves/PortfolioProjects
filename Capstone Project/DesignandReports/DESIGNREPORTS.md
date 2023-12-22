@@ -17,7 +17,6 @@ The company retails download only items like E-Books, Movies, Songs etc. The com
 
 
 
-## LOAD DATA INTO THE DATA WAREHOUSE
 
 
 - Create a grouping sets query using the columns country, category, totalsales
