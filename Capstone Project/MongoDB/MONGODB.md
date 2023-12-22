@@ -1,5 +1,3 @@
-The company needed me to design a data platform that uses MongoDB as a NoSQL database. Used MongoDB to store the e-commerce catalog data.
-
 
 - Import ‘catalagog.json’into MongoDB server into a database named ‘catalog’ and a collection named ‘electronics’
   
