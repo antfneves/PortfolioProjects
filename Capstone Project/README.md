@@ -3,7 +3,7 @@
 As part of the IBM Data Engineering Capstone Project from Coursera, I assumed the role of the Associate Data Warehouse Engineer who has recently joined an e-commerce organization named SoftCart.
 Sofcart uses a hybrid architecture, with some of its databases on premises and some on cloud.
 
-## Tools and Technologies Used:
+## TOOLS AND TECHNOLOGIES USED:
 -	OLTP database – MySQL
 -	NoSQL database – MongoDB
 -	Production Data warehouse – DB2 on Cloud
@@ -13,7 +13,7 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 -	Business Intelligence Dashboard – IBM Cognos Analytics
 -	Data Pipelines – Apache Airflow
 
-## Process
+## PROCESS
 -	SoftCart’s online presence is primarily through its website, which customers access using a variety of devices like laptops, mobiles and tablets.
 -	All the catalog data of the products is stored in the MongoDB NoSQL server.
 -	All the transactional data like inventory and sales are stored in the MySQL database server.
