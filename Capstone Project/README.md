@@ -25,123 +25,44 @@ Sofcart uses a hybrid architecture, with some of its databases on premises and s
 -	To move data between OLTP, NoSQL and the data warehouse, ETL pipelines are used and these run on Apache Airflow.
 
 ## OLTP Database
-Designed a data platform that uses MySQL as an OLTP database. Used MySQL to store the OLTP data.
-  
-- Created a database named sales
-   
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/1createtable.jpg?raw=true)
-    
-- Imported the data from a csv file using phpMyAdmin
-    
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/2importdata.jpg?raw=true)
-    
-- Wrote a query to find out the count of records in the table sales_data
-    
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/4salesrows.jpg?raw=true)
-    
-- Created an index named ts on the timestamp field. Listed all indexes on the table sales_data.
-    
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/5listindexes.jpg?raw=true)
+Designed the OLTP database for the e-commerce website, populated the OLTP Database with the data provided, and 
+automated the export of the daily incremental data into the data warehouse. 
 
-
-- Wrote a bash script that exports all the rows in the sales_daya table to a file named sales_data.sql
-    
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/6exportdata.jpg?raw=true)
+Link: [OLTP DATABASE](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/OLTP/OLTP.md)
 
 ## MONGODB
-The company needed me to design a data platform that uses MongoDB as a NoSQL database. Used MongoDB to store the e-commerce catalog data.
+The company needed me to design a data platform that uses MongoDB as a NoSQL database. Used MongoDB to store and query the e-commerce catalog data.
 
-- Imported ‘catalagog.json’into MongoDB server into a database named ‘catalog’ and a collection named ‘electronics’
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/7mongoimport.jpg?raw=true)
-
-- Created an index on the field ‘type’
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/10create-index.jpg?raw=true)
-
-- Wrote a query to find the count of laptops
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/11mongo-query-laptops.jpg?raw=true)
-
-- Wrote a query to find the number of smart phones with screen size of 6 inches
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/12mongo-query-mobiles1.jpg?raw=true)  
-
-- Wrote a query to find out the average screen size of smart phones
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/13mongo-query-mobiles2.jpg?raw=true)   
-
-- Exported the fields ‘-id’, ‘type’, ‘model’, from the ‘electronics’collection into a file named electronics.csv
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/14mongoexport.jpg?raw=true)
+Link: [MONGODB](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/MongoDB/MONGODB.md)
 
 ## DESIGN A DATA WAREHOUSE AND GENERATE REPORTS
-The company retails download only items like E-Books, Movies, Songs etc. The company has international presence and customers from all over the world. The company would like to create a data warehouse so that it can create reports. 
+Designed the schema for a data warehouse based on the schema of the OLTP and NoSQL databases. 
+Created the schema and loaded the data into the fact and dimension tables, automated the daily incremental data insertion into the data warehouse, and 
+created Cubes and Rollups to make the reporting easier.
 
-- Designed the dimension tables softcartDimDate, softcartDimCategory, softcartDimItem and softcartDimCountry.
-- Designed the fact table softcartFactSales.
-- Designed the relationships.
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/softcartRelationships.jpg?raw=true)  
-
-- Downloaded the schema sql from ERD tool and created the schema in a database named ‘staging’
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/createschema.jpg?raw=true)
-
-- LOAD DATA INTO THE DATA WAREHOUSE
-- Created a grouping sets query using the columns country, category, totalsales
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/19groupingsets.jpg?raw=true)
-
-- Created a rollup query using the columns year, country, and totalsales
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/20rollup.jpg?raw=true)
-
-- Created a cube query using the columns year, country, and average sales
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/21cube.jpg?raw=true)
-
-- Created an MQT named total_sales_per_country that has the columns country and total_sales
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/22mqt.jpg?raw=true)
+Link: [DESIGN A DATA WAREHOUSE AND GENERATE REPORTS](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/DesignandReports/DESIGNREPORTS.md)
 
 ## IBM COGNOS ANALYTICS
+Created a Business Intelligence dashboard. First I created a Cognos data source that points to a data warehouse table, then I created a bar chart of quarterly sales of cell phones, created a pie chart of sales of electronic goods by category, and created a line chart of total sales per month for a given year.
 
-- Imported data in the downloaded file ecommerce.csv into a table named sales_history
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/dataimport1.jpg?raw=true)
-
-- Created a line chart of month wise total sales for the year 2020.
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/26linechart.jpg?raw=true)
-
-- Created a pie chart of category wise total sales.
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/27piechart.jpg?raw=true)
-
-- Create a bar chart of Quarterly sales of mobile phones
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/28barchart.jpg?raw=true)
+Link: [COGNOSANALYTICS](https://github.com/antfneves/PortfolioProjects/tree/main/Capstone%20Project/CognosAnalytics)
 
 ## AUTOMATE LOADING OF INCREMENTAL DATA INTO THE DATA WAREHOUSE
-You need to keep data synchronized between different databases/data warehouses as a part of your daily routine. One task that is routinely performed is the sync up of staging data warehouse and production data warehouse. You will be given a set of python scripts to start with. You will use/modify them to perform the incremental data load from MySQL server which acts as a staging warehouse to the IBM DB2 which is a production data warehouse. This script will be scheduled by the data engineers to sync up the data between the staging and production data warehouse.
+Extracted data from an OLTP, NoSQL, and MongoDB databases into CSV format.
 
-Link: [AUTOMATE LOADING OF INCREMENTAL DATA](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/automation.py)
+Link: [AUTOMATE LOADING OF INCREMENTAL DATA](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Automation/AUTOMATION.md)
 
 ## APACHE AIRFLOW
-Write a pipeline that analyzes the web server log file, extracts the required lines(ending with html) and fields(time stamp, size ) and transforms (bytes to mb) and load (append to an existing file.)
+Transformed the OLTP data to suit the data warehouse schema, and loaded the transformed data into the data warehouse. 
+Finally, I checked if the data was loaded properly.
 
-Link: [PIPELINE](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/process_web_log.py)
-
-- Submit the DAG
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/39submit_dag.jpg?raw=true)
-
-- Monitor the DAG
-
-![](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Images/41dag_runs.jpg?raw=true)
+Link: [AIRFLOW](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Airflow/AIRFLOW.md)
 
 ## APACHE SPARK
+Used my skills in Big Data Analytics to create a Spark connection to the data warehouse and deployed a machine learning model on SparkML for making sales projections
+
+Link: [SPARK](https://github.com/antfneves/PortfolioProjects/blob/main/Capstone%20Project/Spark/SPARK.md)
+
 
 
 
