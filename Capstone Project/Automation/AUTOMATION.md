@@ -1,11 +1,11 @@
 ## AUTOMATE LOADING OF INCREMENTAL DATA INTO THE DATA WAREHOUSE
+In this assignment, I performed a number of tasks such as:  
 
-
--	Connect to IBM DB2 data warehouse and identify the last row on it.
+-	Connected to IBM DB2 data warehouse and identified the last row on it.
   
--	Connect to MySQL staging data warehouse and find all rows later than the last row on the datawarehouse.
+-	Connected to MySQL staging data warehouse and found all rows later than the last row on the datawarehouse.
   
--	Insert the new data in the MySQL staging data warehouse into the IBM DB2 production data warehouse.
+-	Inserted the new data in the MySQL staging data warehouse into the IBM DB2 production data warehouse.
   
 
 
